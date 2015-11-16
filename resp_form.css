@@ -1,0 +1,152 @@
+/* Styles for responsive forms */
+
+*
+{
+	border:0;
+	margin:0;
+	box-sizing:border-box;
+	border-collapse: collapse;
+	font-family: Lato,sans-serif;
+}
+
+#large
+{
+	display:none;
+}
+
+html
+{
+  background: url(img/env-background.png) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5
+{
+	font-family: Lora, serif;
+}
+
+#wrapper
+{
+	opacity:1.0;
+	width:90%;
+	margin:auto;
+}
+
+#masthead
+{
+	height: 7rem;
+	text-align:center;
+	vertical-align: center;
+	padding-top:2rem;
+	padding-bottom:1rem;
+	display: block;
+}
+
+.box
+{
+	width:100%;
+}
+
+.box label
+{
+	display:none;
+	width:0%;
+}
+
+.box input
+{
+	width:100%;
+	display: inline;
+	align-items: center;
+	margin-bottom:0.5em;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+#bouton
+{
+	margin-top:1em;
+	border-radius: 5px;
+   	border: 5px hsl(210,50%,80%) solid;
+	background-color:hsl(210,50%,80%);	
+}
+
+@media all and (min-width: 600px) and (max-width: 900px)
+{
+	.box label
+	{
+		display:block;
+		width:50%;
+		font-size:80%;
+	}
+	
+	.box input
+	{
+		display:block;
+		margin-left:5%;
+		width: 95%;
+		object-position: right;
+	}
+	
+	#bouton
+	{
+		margin-left:2.5%;
+	}
+	
+	#inputboxes
+	{
+		column-count:2;
+		column-gap:.5%;
+		column-width:49.5%;
+		-webkit-column-count:2;
+		-webkit-column-gap:1%;
+		-webkit-column-width:49.5%;
+	}
+}
+
+@media all and (min-width: 900px)
+{
+
+	#inputboxes
+	{
+		width:90%;
+		float:left;
+		column-count:1;
+		column-gap:1%;
+		column-width:30%;
+		-webkit-column-count:2;
+		-webkit-column-gap:1%;
+		-webkit-column-width:20%;
+	}
+	
+	.box label
+	{
+		display:block;
+		float:left;
+		width:20%;
+		font-size:80%;
+	}
+	
+	.box input
+	{
+		margin-top:3px;
+		float:left;
+		width: 70%;
+		margin-left:0;
+	}
+
+	#subbox
+	{
+		float:left;
+		display:inline;
+		margin:0;
+		position:relative;
+		top:-16px;
+	}
+	
+	#bouton
+	{
+		font-size:100%;
+		
+	}
+}
